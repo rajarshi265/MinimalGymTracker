@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Gym Tracker</title>
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#09090b">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+    <header>
+        <div class="header-top">
+            <h1>Workout</h1>
+            <button class="history-btn" onclick="openHistoryModal()">History</button>
+        </div>
+        <nav class="muscle-groups" id="group-nav">
+        </nav>
+    </header>
+
+    <main>
+        <section class="workout-section">
+            <div class="section-header">
+                <h2 id="current-group-title">Chest</h2>
+                <button class="add-btn" onclick="addExercise()">+ Add Exercise</button>
+            </div>
+
+            <div class="stopwatch-container">
+                <div class="stopwatch-time" id="stopwatch-display">01:30</div>
+                <div class="stopwatch-controls">
+                    <button onclick="toggleRestTimer()" id="rest-timer-btn" class="sw-btn">Start 90s Rest</button>
+                </div>
+            </div>
+
+            <div id="exercise-container">
+            </div>
+        </section>
+    </main>
+</div>
+
+<button class="save-btn" onclick="saveSession()">Finish</button>
+
+<div id="history-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeHistoryModal()">&times;</span>
+        <h2>History</h2>
+
+        <div class="history-nav" id="history-nav"></div>
+        <div id="history-list"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
