@@ -29,4 +29,4 @@ A clean, distraction-free Android application designed for progressive overload 
 To build this project from source using Android Studio:
 1. Clone this repository:
    ```bash
-   git clone [[https://github.com/yourusername/MinimalGymTracker.git](https://github.com/yourusername/MinimalGymTracker.git)](https://github.com/rajarshi265/MinimalGymTracker.git)
+   git clone https://github.com/rajarshi265/MinimalGymTracker.git
