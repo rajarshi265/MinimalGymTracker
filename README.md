@@ -21,7 +21,7 @@ A clean, distraction-free Android application designed for progressive overload 
 ## 🚀 How to Install & Run
 
 ### For Android Users (.apk)
-1. Go to the [Releases](#) tab on this repository. *(Note to author: Link your release here later!)*
+1. Go to the [Releases](https://github.com/rajarshi265/MinimalGymTracker/releases/tag/v1.0.0) tab on this repository. 
 2. Download the `GymTracker.apk` file to your Android device.
 3. Tap to install (you may need to allow "Install from Unknown Sources" in your settings).
 
